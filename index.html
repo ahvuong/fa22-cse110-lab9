@@ -102,7 +102,19 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    
   </script>
+  <script src="./index.js" type="module"></script>
+
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "7b066499f3c54c5f9d5186e7ec8a2556"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+    TrackJS.track('Testing TrackJS');
+  </script>
+                        
 </body>
 
 </html>
